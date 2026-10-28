@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explore Destinations | Serendib Journeys</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="destinations-page">
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-icon"><i data-lucide="compass"></i></span>
+            <span class="logo-text">
+                SERENDIB
+                <small>J O U R N E Y S</small>
+            </span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
+            <i data-lucide="menu"></i>
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="destinations.html" class="active">Destinations</a>
+            <a href="experiences.html">Experiences</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="planner.html" class="nav-cta">
+                Plan Your Trip <span>↗</span>
+            </a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Page Hero -->
+        <section class="dest-hero">
+            <div class="dest-hero-image"></div>
+            <div class="dest-hero-overlay"></div>
+
+            <div class="dest-hero-content">
+                <p class="eyebrow">
+                    <span></span> THE BEAUTY OF SRI LANKA
+                </p>
+
+                <h1>Find your <em>somewhere.</em></h1>
+
+                <p>
+                    Ancient kingdoms, mist-covered mountains and
+                    quiet coastal escapes. Your next story begins here.
+                </p>
+
+                <a href="#all-destinations" class="btn-primary">
+                    Discover the island
+                    <i data-lucide="arrow-down"></i>
+                </a>
+            </div>
+
+            <div class="dest-hero-bottom">
+                <span>EXPLORE BEYOND THE ORDINARY</span>
+                <span>ISLAND OF WONDER · SRI LANKA</span>
+            </div>
+        </section>
+
+
+        <!-- Destination Collection -->
+        <section class="dest-collection" id="all-destinations">
+
+            <div class="dest-intro">
+                <div>
+                    <p class="section-label">01 — YOUR NEXT ADVENTURE</p>
+                    <h2>Every place has<br><em>a story to tell.</em></h2>
+                </div>
+
+                <p class="dest-intro-text">
+                    Whether you dream of mountain mornings, ancient
+                    wonders or sunsets by the sea, find a place that
+                    feels like it was made for you.
+                </p>
+            </div>
+
+
+            <!-- Search -->
+            <div class="destination-tools">
+
+                <label class="destination-search">
+                    <i data-lucide="search"></i>
+
+                    <input type="search" id="destinationSearch" placeholder="Search places, regions..."
+                        aria-label="Search destinations">
+
+                    <span>SEARCH</span>
+                </label>
+
+                <div class="destination-filters" aria-label="Filter destinations">
+                    <button class="filter-btn active" data-filter="all">
+                        All places
+                    </button>
+
+                    <button class="filter-btn" data-filter="culture">
+                        Culture
+                    </button>
+
+                    <button class="filter-btn" data-filter="nature">
+                        Nature
+                    </button>
+
+                    <button class="filter-btn" data-filter="coast">
+                        Coast
+                    </button>
+
+                    <button class="filter-btn" data-filter="hill-country">
+                        Hill country
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- Cards -->
+            <div class="dest-list-grid" id="destinationGrid">
+
+                <a href="destination.html?id=sigiriya" class="dest-list-card" data-category="culture"
+                    data-name="sigiriya rock fortress cultural heritage">
+
+                    <div class="dest-list-image">
+                        <img src="images/destinations/sigiriya.jpg" alt="Sigiriya Rock Fortress">
+
+                        <span class="dest-card-number">01</span>
+
+                        <span class="dest-card-icon">
+                            <i data-lucide="arrow-up-right"></i>
+                        </span>
+                    </div>
+
+                    <div class="dest-list-info">
+                        <div class="dest-meta">
+                            <span><i data-lucide="map-pin"></i> CENTRAL PROVINCE</span>
+                            <span>CULTURE</span>
+                        </div>
+
+                        <h3>Sigiriya</h3>
+
+                        <p>
+                            An ancient rock fortress rising above
+                            a landscape filled with history.
+                        </p>
+
+                        <span class="dest-discover">
+                            Discover this place <span>↗</span>
+                        </span>
+                    </div>
+                </a>
+
+
+                <a href="destination.html?id=ella" class="dest-list-card" data-category="hill-country"
+                    data-name="ella mountains little adams peak">
+
+                    <div class="dest-list-image">
+                        <img src="images/destinations/ella.jpg" alt="Green mountains in Ella">
+
+                        <span class="dest-card-number">02</span>
+
+                        <span class="dest-card-icon">
+                            <i data-lucide="arrow-up-right"></i>
+                        </span>
+                    </div>
+
+                    <div class="dest-list-info">
+                        <div class="dest-meta">
+                            <span><i data-lucide="map-pin"></i> UVA PROVINCE</span>
+                            <span>HILL COUNTRY</span>
+                        </div>
+
+                        <h3>Ella</h3>
+
+                        <p>
+                            Misty mountain views, green valleys
+                            and unforgettable train journeys.
+                        </p>
+
+                        <span class="dest-discover">
+                            Discover this place <span>↗</span>
+                        </span>
+                    </div>
+                </a>
+
+
+                <a href="destination.html?id=mirissa" class="dest-list-card" data-category="coast"
+                    data-name="mirissa beach ocean south coast">
+
+                    <div class="dest-list-image">
+                        <img src="images/destinations/mirissa.jpg" alt="Tropical beach in Mirissa">
+
+                        <span class="dest-card-number">03</span>
+
+                        <span class="dest-card-icon">
+                            <i data-lucide="arrow-up-right"></i>
+                        </span>
+                    </div>
+
+                    <div class="dest-list-info">
+                        <div class="dest-meta">
+                            <span><i data-lucide="map-pin"></i> SOUTHERN PROVINCE</span>
+                            <span>COAST</span>
+                        </div>
+
+                        <h3>Mirissa</h3>
+
+                        <p>
+                            Golden sand, turquoise water and
+                            slow afternoons beside the ocean.
+                        </p>
+
+                        <span class="dest-discover">
+                            Discover this place <span>↗</span>
+                        </span>
+                    </div>
+                </a>
+
+
+                <a href="destination.html?id=galle-fort" class="dest-list-card" data-category="culture"
+                    data-name="galle fort history colonial architecture">
+
+                    <div class="dest-list-image">
+                        <img src="images/destinations/galle-fort.jpg" alt="Historic Galle Fort">
+
+                        <span class="dest-card-number">04</span>
+
+                        <span class="dest-card-icon">
+                            <i data-lucide="arrow-up-right"></i>
+                        </span>
+                    </div>
+
+                    <div class="dest-list-info">
+                        <div class="dest-meta">
+                            <span><i data-lucide="map-pin"></i> SOUTHERN PROVINCE</span>
+                            <span>CULTURE</span>
+                        </div>
+
+                        <h3>Galle Fort</h3>
+
+                        <p>
+                            Cobblestone streets, historic walls
+                            and charming coastal architecture.
+                        </p>
+
+                        <span class="dest-discover">
+                            Discover this place <span>↗</span>
+                        </span>
+                    </div>
+                </a>
+
+
+                <a href="destination.html?id=nuwara-eliya" class="dest-list-card" data-category="hill-country"
+                    data-name="nuwara eliya tea estates cool climate">
+
+                    <div class="dest-list-image">
+                        <img src="images/destinations/nuwara-eliya.jpg" alt="Tea estates in Nuwara Eliya">
+
+                        <span class="dest-card-number">05</span>
+
+                        <span class="dest-card-icon">
+                            <i data-lucide="arrow-up-right"></i>
+                        </span>
+                    </div>
+
+                    <div class="dest-list-info">
+                        <div class="dest-meta">
+                            <span><i data-lucide="map-pin"></i> CENTRAL PROVINCE</span>
+                            <span>HILL COUNTRY</span>
+                        </div>
+
+                        <h3>Nuwara Eliya</h3>
+
+                        <p>
+                            Rolling tea gardens, cool mornings
+                            and peaceful green landscapes.
+                        </p>
+
+                        <span class="dest-discover">
+                            Discover this place <span>↗</span>
+                        </span>
+                    </div>
+                </a>
+
+
+                <a href="destination.html?id=yala" class="dest-list-card" data-category="nature"
+                    data-name="yala wildlife safari national park">
+
+                    <div class="dest-list-image">
+                        <img src="images/destinations/yala.jpg" alt="Wildlife and natural scenery in Yala">
+
+                        <span class="dest-card-number">06</span>
+
+                        <span class="dest-card-icon">
+                            <i data-lucide="arrow-up-right"></i>
+                        </span>
+                    </div>
+
+                    <div class="dest-list-info">
+                        <div class="dest-meta">
+                            <span><i data-lucide="map-pin"></i> SOUTH EAST SRI LANKA</span>
+                            <span>NATURE</span>
+                        </div>
+
+                        <h3>Yala</h3>
+
+                        <p>
+                            Discover wild landscapes and the
+                            remarkable wildlife of Sri Lanka.
+                        </p>
+
+                        <span class="dest-discover">
+                            Discover this place <span>↗</span>
+                        </span>
+                    </div>
+                </a>
+
+            </div>
+
+            <p class="no-results" id="noResults" hidden>
+                No destinations found. Try another search.
+            </p>
+
+        </section>
+
+
+        <!-- Closing Banner -->
+        <section class="dest-closing">
+            <div class="dest-closing-content">
+                <p class="section-label">YOUR ISLAND STORY AWAITS</p>
+
+                <h2>Some journeys<br>stay with you <em>forever.</em></h2>
+
+                <a href="planner.html" class="btn-primary">
+                    Plan your journey
+                    <i data-lucide="arrow-up-right"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <a href="index.html" class="logo footer-logo">
+            <span class="logo-icon"><i data-lucide="compass"></i></span>
+            <span class="logo-text">
+                SERENDIB
+                <small>J O U R N E Y S</small>
+            </span>
+        </a>
+
+        <p>A Little Island, Endless Wonders.</p>
+        <span class="footer-copy">© 2026 Serendib Journeys</span>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/destinations.js"></script>
+
+</body>
+
+</html>
